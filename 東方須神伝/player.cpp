@@ -160,10 +160,12 @@ void player::data() {//XVŠÖ”
 
 void player::draw() {//•`‰æŠÖ”
 	playergraphic.drawAt(p_position);
-	count c=0;
-	++c;
+	double rad;
+	for (count c = 0; c < 36; ++c) {
+		rad = Radians(c * 10 + System::FrameCount()*2);
+	}
 	if (s) {
-		sloweff.rotate(c).drawAt(p_position);
+		sloweff.rotate(rad).drawAt(p_position);
 	}
 }
 void player::updata() {
