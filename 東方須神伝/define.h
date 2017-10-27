@@ -7,3 +7,4 @@ using define_f = const float;
 using graphic = const Texture;
 using point = Point;
 using count = int32;
+using speed = int32;

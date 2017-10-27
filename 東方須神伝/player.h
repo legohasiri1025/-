@@ -5,17 +5,20 @@
 
 class player{
 private:
-	point m_position;
-	//Array<player>playergraphic;
-	graphic player_graphic[16];
-public:
+	point p_position;
+	speed plspeed;
 	int grnum = 0;
 	count plgr = 0;
-
+	Texture playergraphic;
+	Texture sloweff;
+	speed slow, firsr;
+	bool l, r, u, d, s;
+public:
 	player();
 
-	void updata();
+	void data();
 	void draw();
+	void updata();
 
 	~player();
 };
